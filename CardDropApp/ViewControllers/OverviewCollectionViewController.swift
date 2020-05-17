@@ -10,8 +10,8 @@ import UIKit
 
 class OverviewCollectionViewController: UICollectionViewController {
 
-    let categoryDataRequest = DataRequest<Category>(dataSource: "Categories")
-    var categoryData = [Category]()
+    let yogaPoseDataRequest = DataRequest<YogaPose>(dataSource: "YogaPoses")
+    var yogaPoseData = [YogaPose]()
     
     var selectedIndexPath:IndexPath?
     
@@ -21,12 +21,12 @@ class OverviewCollectionViewController: UICollectionViewController {
     }
     
     func loadData() {
-        categoryDataRequest.getData{ [weak self] dataResult in
+        yogaPoseDataRequest.getData{ [weak self] dataResult in
             switch dataResult {
             case .failure:
                 print("Could not load categories")
             case .success(let cateogires):
-                self?.categoryData = cateogires
+                self?.yogaPoseData = cateogires
                 self?.collectionView.reloadData()
             }
         }
@@ -34,12 +34,12 @@ class OverviewCollectionViewController: UICollectionViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
-            let category = sender as! Category
-            guard let image = UIImage(named: category.categoryImageName) else {return}
+            let yogaPose = sender as! YogaPose
+            guard let image = UIImage(named: yogaPose.categoryImageName) else {return}
             
             let imageSelectionVC = segue.destination as! ImageSelectionViewController
             imageSelectionVC.image = image
-            imageSelectionVC.category = category
+            imageSelectionVC.yogaPose = yogaPose
         }
     }
     
@@ -53,14 +53,14 @@ extension OverviewCollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return categoryData.count
+        return yogaPoseData.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? CategoryCollectionViewCell else {fatalError("Could not create proper cateogry cell for collection view")}
         
-        let category = categoryData[indexPath.item]
+        let category = yogaPoseData[indexPath.item]
         
         guard let image = UIImage(named: category.categoryImageName) else {fatalError("Could not load image for cell")}
         
@@ -81,7 +81,7 @@ extension OverviewCollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let category = categoryData[indexPath.item]
+        let category = yogaPoseData[indexPath.item]
         selectedIndexPath = indexPath
         self.performSegue(withIdentifier: "showDetail", sender: category)
         
@@ -93,6 +93,12 @@ extension OverviewCollectionViewController : UICollectionViewDelegateFlowLayout 
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
        return UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        //let height = view.frame.size.height
+        let width = view.frame.size.width
+        return CGSize(width: width * 0.5 - 40, height: 225)
     }
     
 }

@@ -4,81 +4,81 @@
 <array>
 	<dict>
 		<key>imageName</key>
-		<string>image1</string>
+		<string>Dancer Pose</string>
 		<key>description</key>
-		<string>Mountain Waterfall</string>
+		<string>Dancer Pose</string>
 		<key>photographer</key>
 		<string>Will Stewart</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
-		<string>image2</string>
+		<string>Eagle Pose</string>
 		<key>description</key>
-		<string>Mainboard Closeup</string>
+		<string>Eagle Pose</string>
 		<key>photographer</key>
 		<string>Fancevrave</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
-		<string>image3</string>
+		<string>Mountain Pose</string>
 		<key>description</key>
-		<string>Delicous Eggs</string>
+		<string>Mountain Pose</string>
 		<key>photographer</key>
 		<string>Brooke Lark</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
-		<string>image4</string>
+		<string>Tree Pose</string>
 		<key>description</key>
-		<string>A Colorful Walk</string>
+		<string>Tree Pose</string>
 		<key>photographer</key>
 		<string>Efe Kurnaz</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
-		<string>image5</string>
+		<string>Fire Log Pose</string>
 		<key>description</key>
-		<string>Love is in the Air</string>
+		<string>Fire Log Pose</string>
 		<key>photographer</key>
 		<string>Tyler Nix</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
-		<string>image6</string>
+		<string>Garland Pose</string>
 		<key>description</key>
-		<string>Lonley Ship</string>
+		<string>Garland Pose</string>
 		<key>photographer</key>
 		<string>Red Hat Factory</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
-		<string>image7</string>
+		<string>Hero Pose</string>
 		<key>description</key>
-		<string>The Final Frontier</string>
+		<string>Hero Pose</string>
 		<key>photographer</key>
 		<string>Adrian Pelletier</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
-		<string>image8</string>
+		<string>Bridge Pose</string>
 		<key>description</key>
-		<string>Up in the Trees</string>
+		<string>Bridge Pose</string>
 		<key>photographer</key>
 		<string>Casey Horner</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
-		<string>image9</string>
+		<string>Supine Bound Angle Pose</string>
 		<key>description</key>
-		<string>Road to Freedom</string>
+		<string>Supine Bound Angle Pose</string>
 		<key>photographer</key>
 		<string>Thomas Griesbeck</string>
 	</dict>
 	<dict>
 		<key>imageName</key>
-		<string>image10</string>
+		<string>Wheel Pose</string>
 		<key>description</key>
-		<string>Happy Geometry</string>
+		<string>Wheel Pose</string>
 		<key>photographer</key>
 		<string>Beasty</string>
 	</dict>

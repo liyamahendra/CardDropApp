@@ -7,14 +7,16 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class ImageSelectionViewController: UIViewController {
 
     var image:UIImage?
-    var category:Category?
+    var yogaPose:YogaPose?
     
-    let imageDataRequest = DataRequest<Image>(dataSource: "Images")
-    var imageData = [Image]()
+    //let imageDataRequest = DataRequest<Pose>(dataSource: "Images")
+    var imageData = [Pose]()
     
     @IBOutlet weak var initialImageView: UIImageView!
     @IBOutlet weak var categoryLabel: UILabel!
@@ -31,35 +33,36 @@ class ImageSelectionViewController: UIViewController {
         initialDimView.alpha = 0
         backButton.alpha = 0
         
-        if let availableImage = image, let availableCategory = category {
+        if let availableImage = image, let availableCategory = yogaPose {
             initialImageView.image = availableImage
             categoryLabel.text = availableCategory.categoryName
         }
         
-        
+        imageData = (yogaPose?.poses)! as [Pose]
     }
     
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        loadData()
+        //loadData()
+        setupUI()
     }
     
     
-    func loadData() {
-        imageDataRequest.getData{ [weak self] dataResult in
-            switch dataResult {
-            case .failure:
-                print("Could not load images")
-            case .success(let images):
-                self?.imageData = images
-                DispatchQueue.main.async {
-                    self?.setupUI()
-                }
-            }
-            
-        }
-    }
+//    func loadData() {
+//        imageDataRequest.getData{ [weak self] dataResult in
+//            switch dataResult {
+//            case .failure:
+//                print("Could not load images")
+//            case .success(let images):
+//                self?.imageData = images
+//                DispatchQueue.main.async {
+//                    self?.setupUI()
+//                }
+//            }
+//
+//        }
+//    }
     
     func setupUI() {
         
@@ -84,8 +87,6 @@ class ImageSelectionViewController: UIViewController {
             photoView.photographerLabel.text = image.photographer
             
             scrollView.addSubview(photoView)
-            
-            
         }
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ImageSelectionViewController.didPressOnScrollView(recognizer:)))
@@ -97,14 +98,14 @@ class ImageSelectionViewController: UIViewController {
     @objc
     func didPressOnScrollView (recognizer:UITapGestureRecognizer) {
         if currentScrollViewPage != 0 {
-            self.performSegue(withIdentifier: "showCard", sender: self)
+            //self.performSegue(withIdentifier: "showCard", sender: self)
+            playVideo()
         }else{
             scrollView.setContentOffset(CGPoint(x: self.view.frame.width, y: 0), animated: true)
             currentScrollViewPage = 1
         }
         
     }
-    
     
 
     @IBAction func goBack(_ sender: UIButton) {
@@ -129,6 +130,25 @@ class ImageSelectionViewController: UIViewController {
             sendCardVC.backgroundImage = imageToSend
             sendCardVC.modalTransitionStyle = .crossDissolve
         }
+    }
+    
+    func playVideo() {
+        var mediaPath = imageData[currentScrollViewPage - 1].mediaPath
+        let isLocal = imageData[currentScrollViewPage - 1].isLocal
+        
+        if isLocal {
+            mediaPath = Bundle.main.path(forResource: mediaPath, ofType:"mp4")! // FIXME: Hard coding extension
+        }
+        
+        let mediaURL = (isLocal) ? URL(fileURLWithPath: mediaPath) : URL(string: mediaPath)
+        let player = AVPlayer(url: mediaURL!)
+        
+        let playerController = AVPlayerViewController()
+        playerController.player = player
+        
+        UIApplication.shared.keyWindow?.rootViewController?.present(playerController, animated: true, completion: {
+            player.play()
+        })
     }
     
 }

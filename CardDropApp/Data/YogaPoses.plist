@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>categoryID</key>
+		<string>1</string>
+		<key>categoryName</key>
+		<string>Standing Yoga Poses</string>
+		<key>categoryImageName</key>
+		<string>category-standing-yoga</string>
+		<key>categoryDescription</key>
+		<string>TEST</string>
+		<key>poses</key>
+		<array>
+			<dict>
+				<key>imageID</key>
+				<string>1</string>
+				<key>imageName</key>
+				<string>Dancer Pose</string>
+				<key>photographer</key>
+				<string>The Photographer</string>
+				<key>description</key>
+				<string>The Dancer Pose</string>
+				<key>mediaPath</key>
+				<string>DancerPose</string>
+				<key>isLocal</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>imageID</key>
+				<string>2</string>
+				<key>imageName</key>
+				<string>Eagle Pose</string>
+				<key>photographer</key>
+				<string>The Photographer</string>
+				<key>description</key>
+				<string>The Eagle Pose</string>
+				<key>mediaPath</key>
+				<string>https://v.ftcdn.net/01/98/24/81/700_F_198248166_JdbGwc6mdrvkC4NOGrysjr89idzGSj4b_ST.mp4</string>
+				<key>isLocal</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>imageID</key>
+				<string>3</string>
+				<key>imageName</key>
+				<string>Mountain Pose</string>
+				<key>photographer</key>
+				<string>The Photographer</string>
+				<key>description</key>
+				<string>The Mountain Pose</string>
+				<key>mediaPath</key>
+				<string>MountainPose</string>
+				<key>isLocal</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>imageID</key>
+				<string>4</string>
+				<key>imageName</key>
+				<string>Tree Pose</string>
+				<key>photographer</key>
+				<string>The Photographer</string>
+				<key>description</key>
+				<string>The Tree Pose</string>
+				<key>mediaPath</key>
+				<string>https://v.ftcdn.net/03/30/73/44/700_F_330734493_G89P2w5VpL4WWHXYCdeoXvf6Hx3Rcmei_ST.mp4</string>
+				<key>isLocal</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>categoryID</key>
+		<string>2</string>
+		<key>categoryName</key>
+		<string>Sitting Yoga Poses</string>
+		<key>categoryImageName</key>
+		<string>category-sitting-yoga</string>
+		<key>categoryDescription</key>
+		<string>TEST</string>
+		<key>poses</key>
+		<array>
+			<dict>
+				<key>imageID</key>
+				<string>1</string>
+				<key>imageName</key>
+				<string>Fire Log Pose</string>
+				<key>photographer</key>
+				<string>The Photographer</string>
+				<key>description</key>
+				<string>The Fire Log Pose</string>
+				<key>mediaPath</key>
+				<string>https://v.ftcdn.net/02/25/46/28/700_F_225462891_QWyiIPNBeQFfVmtJfelBtQOAjzSjr3c7_ST.mp4</string>
+				<key>isLocal</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>imageID</key>
+				<string>2</string>
+				<key>imageName</key>
+				<string>Garland Pose</string>
+				<key>photographer</key>
+				<string>The Photographer</string>
+				<key>description</key>
+				<string>The Garland Pose</string>
+				<key>mediaPath</key>
+				<string>GarlandPose</string>
+				<key>isLocal</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>imageID</key>
+				<string>3</string>
+				<key>imageName</key>
+				<string>Hero Pose</string>
+				<key>photographer</key>
+				<string>The Photographer</string>
+				<key>description</key>
+				<string>The Hero Pose</string>
+				<key>mediaPath</key>
+				<string>https://v.ftcdn.net/03/24/79/84/700_F_324798458_VHGNtAReeoNtNU6Lgd3AaQJa94dVceEx_ST.mp4</string>
+				<key>isLocal</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>categoryID</key>
+		<string>3</string>
+		<key>categoryName</key>
+		<string>Supine Yoga Poses</string>
+		<key>categoryImageName</key>
+		<string>category-supine-yoga</string>
+		<key>categoryDescription</key>
+		<string>TEST</string>
+		<key>poses</key>
+		<array>
+			<dict>
+				<key>imageID</key>
+				<string>1</string>
+				<key>imageName</key>
+				<string>Bridge Pose</string>
+				<key>photographer</key>
+				<string>The Photographer</string>
+				<key>description</key>
+				<string>The Bridge Pose</string>
+				<key>mediaPath</key>
+				<string>BridgePose</string>
+				<key>isLocal</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>imageID</key>
+				<string>2</string>
+				<key>imageName</key>
+				<string>Supine Bound Angle Pose</string>
+				<key>photographer</key>
+				<string>The Photographer</string>
+				<key>description</key>
+				<string>The Supine Bound Angle Pose</string>
+				<key>mediaPath</key>
+				<string>https://v.ftcdn.net/02/86/39/32/700_F_286393264_z9v3RRk12l4fEGPvfyGUIAb9j2vLJ2G9_ST.mp4</string>
+				<key>isLocal</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>imageID</key>
+				<string>3</string>
+				<key>imageName</key>
+				<string>Wheel Pose</string>
+				<key>photographer</key>
+				<string>The Photographer</string>
+				<key>description</key>
+				<string>The Wheel Pose</string>
+				<key>mediaPath</key>
+				<string>WheelPose</string>
+				<key>isLocal</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>imageID</key>
+				<string>4</string>
+				<key>imageName</key>
+				<string>Wind Relieving Pose</string>
+				<key>photographer</key>
+				<string>The Photographer</string>
+				<key>description</key>
+				<string>The Wind Relieving Pose</string>
+				<key>mediaPath</key>
+				<string>https://v.ftcdn.net/03/14/76/84/700_F_314768472_XHdzwB550FDvKIC25b0FSom7Uq1pNohk_ST.mp4</string>
+				<key>isLocal</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>categoryID</key>
+		<string>4</string>
+		<key>categoryName</key>
+		<string>Balancing Yoga Poses</string>
+		<key>categoryImageName</key>
+		<string>category-balancing-yoga</string>
+		<key>categoryDescription</key>
+		<string>TEST</string>
+		<key>poses</key>
+		<array>
+			<dict>
+				<key>imageID</key>
+				<string>1</string>
+				<key>imageName</key>
+				<string>Locust Pose</string>
+				<key>photographer</key>
+				<string>The Photographer</string>
+				<key>description</key>
+				<string>The Locust Pose</string>
+				<key>mediaPath</key>
+				<string>https://v.ftcdn.net/01/88/52/94/700_F_188529491_KjlqveZ1Y8Uj1CVWTYp81zIjQ5239CsK_ST.mp4</string>
+				<key>isLocal</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>categoryID</key>
+		<string>5</string>
+		<key>categoryName</key>
+		<string>Relaxing Yoga Poses</string>
+		<key>categoryImageName</key>
+		<string>category-relaxation-yoga</string>
+		<key>categoryDescription</key>
+		<string>TEST</string>
+		<key>poses</key>
+		<array>
+			<dict>
+				<key>imageID</key>
+				<string>1</string>
+				<key>imageName</key>
+				<string>Child Pose</string>
+				<key>photographer</key>
+				<string>The Photographer</string>
+				<key>description</key>
+				<string>The Child Pose</string>
+				<key>mediaPath</key>
+				<string>https://v.ftcdn.net/03/45/71/55/700_F_345715564_9eMKGxA14qkRtaEMGiB9lUyQCDpFkhbk_ST.mp4</string>
+				<key>isLocal</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>imageID</key>
+				<string>2</string>
+				<key>imageName</key>
+				<string>Corpose Pose</string>
+				<key>photographer</key>
+				<string>The Photographer</string>
+				<key>description</key>
+				<string>The Corpose Pose</string>
+				<key>mediaPath</key>
+				<string>CorposePose</string>
+				<key>isLocal</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>imageID</key>
+				<string>3</string>
+				<key>imageName</key>
+				<string>Lizard Pose</string>
+				<key>photographer</key>
+				<string>The Photographer</string>
+				<key>description</key>
+				<string>The Lizard Pose</string>
+				<key>mediaPath</key>
+				<string>https://v.ftcdn.net/02/39/00/09/700_F_239000923_EyGyfJNE11ubgVWEf9EJUfdKqf8Ejvjo_ST.mp4</string>
+				<key>isLocal</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>categoryID</key>
+		<string>6</string>
+		<key>categoryName</key>
+		<string>Meditative Yoga Poses</string>
+		<key>categoryImageName</key>
+		<string>category-meditation-yoga</string>
+		<key>categoryDescription</key>
+		<string>TEST</string>
+		<key>poses</key>
+		<array>
+			<dict>
+				<key>imageID</key>
+				<string>1</string>
+				<key>imageName</key>
+				<string>Easy Pose</string>
+				<key>photographer</key>
+				<string>The Photographer</string>
+				<key>description</key>
+				<string>The Easy Pose</string>
+				<key>mediaPath</key>
+				<string>EasyPose</string>
+				<key>isLocal</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>imageID</key>
+				<string>2</string>
+				<key>imageName</key>
+				<string>Half Lotus Pose</string>
+				<key>photographer</key>
+				<string>The Photographer</string>
+				<key>description</key>
+				<string>The Half Lotus Pose</string>
+				<key>mediaPath</key>
+				<string>https://v.ftcdn.net/03/25/23/11/700_F_325231173_K50z49ak7UnaAcRzAMJq1U8Hlhxd2B5C_ST.mp4</string>
+				<key>isLocal</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>imageID</key>
+				<string>3</string>
+				<key>imageName</key>
+				<string>Lotus Pose</string>
+				<key>photographer</key>
+				<string>The Photographer</string>
+				<key>description</key>
+				<string>The Lotus Pose</string>
+				<key>mediaPath</key>
+				<string>LotusPose</string>
+				<key>isLocal</key>
+				<true/>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

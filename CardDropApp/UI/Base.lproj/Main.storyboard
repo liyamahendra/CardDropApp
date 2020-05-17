@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EnQ-dg-ry5">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--CARD DROP-->
+        <scene sceneID="5Ik-4M-91h">
+            <objects>
+                <collectionViewController id="KRw-u8-Nrk" customClass="OverviewCollectionViewController" customModule="CardDropApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="pCs-mT-tPJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="571"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="e8x-uP-A9r">
+                            <size key="itemSize" width="150" height="200"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="bAg-WA-wrR" customClass="CategoryCollectionViewCell" customModule="CardDropApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="category1" translatesAutoresizingMaskIntoConstraints="NO" id="dP1-a6-jt1">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exploration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oV5-b3-2qa">
+                                            <rect key="frame" x="5" y="161" width="140" height="35"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="backgroundImageView" destination="dP1-a6-jt1" id="lO1-zs-8lg"/>
+                                    <outlet property="categoryLabel" destination="oV5-b3-2qa" id="2Xq-Lg-bfu"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="KRw-u8-Nrk" id="kVo-nJ-itA"/>
+                            <outlet property="delegate" destination="KRw-u8-Nrk" id="jGA-hg-P2e"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="CARD DROP" id="PgZ-Od-jq1"/>
+                    <connections>
+                        <segue destination="eM6-pT-wge" kind="show" identifier="showDetail" id="dl7-F4-Qv6"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="66O-LT-TTI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="832.79999999999995" y="653.52323838080963"/>
+        </scene>
+        <!--Image Selection View Controller-->
+        <scene sceneID="Jlh-JO-w9z">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="eM6-pT-wge" customClass="ImageSelectionViewController" customModule="CardDropApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="efy-S2-bRO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ff-yd-VIX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="category1" translatesAutoresizingMaskIntoConstraints="NO" id="wci-Fa-1Ia">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRQ-Ws-1TN">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cjf-zW-vfd">
+                                                <rect key="frame" x="30" y="423.5" width="325" height="34.5"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWv-Tf-tZn">
+                                                <rect key="frame" x="30" y="466" width="158" height="44"/>
+                                                <string key="text">Swipte to choose,
+tap to select</string>
+                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="GWv-Tf-tZn" firstAttribute="leading" secondItem="Cjf-zW-vfd" secondAttribute="leading" id="GGk-VE-GFv"/>
+                                            <constraint firstItem="Cjf-zW-vfd" firstAttribute="leading" secondItem="dRQ-Ws-1TN" secondAttribute="leading" constant="30" id="WiM-3h-w7q"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GWv-Tf-tZn" secondAttribute="trailing" constant="20" symbolic="YES" id="hIB-2r-E7m"/>
+                                            <constraint firstAttribute="trailing" secondItem="Cjf-zW-vfd" secondAttribute="trailing" constant="20" id="kCd-Hh-weX"/>
+                                            <constraint firstItem="GWv-Tf-tZn" firstAttribute="top" secondItem="Cjf-zW-vfd" secondAttribute="bottom" constant="8" id="mio-a5-L3A"/>
+                                            <constraint firstAttribute="bottom" secondItem="Cjf-zW-vfd" secondAttribute="bottom" constant="209" id="zsM-FW-yoK"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wci-Fa-1Ia" firstAttribute="height" secondItem="3Ff-yd-VIX" secondAttribute="height" id="1N8-Ne-9KA"/>
+                                    <constraint firstItem="wci-Fa-1Ia" firstAttribute="leading" secondItem="3Ff-yd-VIX" secondAttribute="leading" id="8sB-Bq-sPx"/>
+                                    <constraint firstAttribute="bottom" secondItem="dRQ-Ws-1TN" secondAttribute="bottom" id="Oib-uc-TJ2"/>
+                                    <constraint firstItem="dRQ-Ws-1TN" firstAttribute="leading" secondItem="3Ff-yd-VIX" secondAttribute="leading" id="X7e-Li-LLl"/>
+                                    <constraint firstAttribute="bottom" secondItem="wci-Fa-1Ia" secondAttribute="bottom" id="Xxl-eE-Y7g"/>
+                                    <constraint firstAttribute="trailing" secondItem="wci-Fa-1Ia" secondAttribute="trailing" id="ZTc-js-3hN"/>
+                                    <constraint firstItem="dRQ-Ws-1TN" firstAttribute="top" secondItem="3Ff-yd-VIX" secondAttribute="top" id="aW5-M2-3l6"/>
+                                    <constraint firstAttribute="trailing" secondItem="dRQ-Ws-1TN" secondAttribute="trailing" id="dui-Uc-IDa"/>
+                                    <constraint firstItem="wci-Fa-1Ia" firstAttribute="width" secondItem="3Ff-yd-VIX" secondAttribute="width" id="p0A-WR-SoU"/>
+                                    <constraint firstItem="wci-Fa-1Ia" firstAttribute="top" secondItem="3Ff-yd-VIX" secondAttribute="top" id="rEe-6u-Auu"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZv-FR-5yJ">
+                                <rect key="frame" x="30" y="55" width="26" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="CancelButtonLight"/>
+                                <connections>
+                                    <action selector="goBack:" destination="eM6-pT-wge" eventType="touchUpInside" id="z3P-Xz-FV5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="top" secondItem="3Ff-yd-VIX" secondAttribute="top" id="J7C-pp-RRe"/>
+                            <constraint firstItem="vh5-Mc-raP" firstAttribute="trailing" secondItem="3Ff-yd-VIX" secondAttribute="trailing" id="bDI-7O-2wC"/>
+                            <constraint firstAttribute="bottom" secondItem="3Ff-yd-VIX" secondAttribute="bottom" id="gsd-QT-QJg"/>
+                            <constraint firstItem="3Ff-yd-VIX" firstAttribute="leading" secondItem="vh5-Mc-raP" secondAttribute="leading" id="kcD-Mw-qGg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vh5-Mc-raP"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="backButton" destination="YZv-FR-5yJ" id="Bp0-R3-QiY"/>
+                        <outlet property="categoryDescription" destination="GWv-Tf-tZn" id="6Hz-HB-7Gi"/>
+                        <outlet property="categoryLabel" destination="Cjf-zW-vfd" id="ehJ-aR-Et0"/>
+                        <outlet property="initialDimView" destination="dRQ-Ws-1TN" id="FrT-sa-g5u"/>
+                        <outlet property="initialImageView" destination="wci-Fa-1Ia" id="BfR-xF-efF"/>
+                        <outlet property="scrollView" destination="3Ff-yd-VIX" id="i4R-UA-3Ph"/>
+                        <segue destination="RiG-Sb-BHa" kind="presentation" identifier="showCard" modalTransitionStyle="crossDissolve" id="3kh-k1-OTJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NEp-aj-ANm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1636" y="653.52323838080963"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NKu-PE-rx8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EnQ-dg-ry5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" largeTitles="YES" id="BRB-p4-nVQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="36"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <outlet property="delegate" destination="hR8-zV-QQg" id="XL2-I2-slU"/>
+                        <segue destination="KRw-u8-Nrk" kind="relationship" relationship="rootViewController" id="FDY-y5-6Kz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KTX-3p-pmh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="hR8-zV-QQg" customClass="ScaleTransitioningDelegate" customModule="CardDropApp" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="82" y="654"/>
+        </scene>
+        <!--Send Card View Controller-->
+        <scene sceneID="b2T-xS-26a">
+            <objects>
+                <viewController id="RiG-Sb-BHa" customClass="SendCardViewController" customModule="CardDropApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7fX-CH-g5d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MF1-2r-7AO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wr-wb-aMm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ge2-Wa-wW2">
+                                        <rect key="frame" x="41" y="276" width="293" height="95.5"/>
+                                        <string key="text">The best preperation
+for tomorrow is doing 
+your best today.</string>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- H. Jackson Brown, Jr." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENl-ed-JTh">
+                                        <rect key="frame" x="76.5" y="391" width="222.5" height="24.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWC-7Y-qsC">
+                                        <rect key="frame" x="30" y="55" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="CancelButtonDark">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dismissVC:" destination="RiG-Sb-BHa" eventType="touchUpInside" id="StN-xz-lM2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kg3-BP-US2">
+                                        <rect key="frame" x="103.5" y="198" width="168" height="53"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="168" id="Ij7-51-YO4"/>
+                                            <constraint firstAttribute="height" constant="53" id="sMy-sM-2zr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="24"/>
+                                        <state key="normal" title="Share Card">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="shareCard:" destination="RiG-Sb-BHa" eventType="touchUpInside" id="VyO-Y6-aTS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="kg3-BP-US2" firstAttribute="centerX" secondItem="7Wr-wb-aMm" secondAttribute="centerX" id="1qp-6W-M4b"/>
+                                    <constraint firstItem="Ge2-Wa-wW2" firstAttribute="leading" secondItem="7Wr-wb-aMm" secondAttribute="leading" constant="41" id="21Y-mM-j7M"/>
+                                    <constraint firstItem="Ge2-Wa-wW2" firstAttribute="top" secondItem="kg3-BP-US2" secondAttribute="bottom" constant="25" id="2si-qd-XZw"/>
+                                    <constraint firstItem="ENl-ed-JTh" firstAttribute="top" secondItem="Ge2-Wa-wW2" secondAttribute="bottom" constant="19.5" id="34c-OG-Xfr"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ge2-Wa-wW2" secondAttribute="trailing" constant="41" id="6bh-2E-Xoa"/>
+                                    <constraint firstItem="Ge2-Wa-wW2" firstAttribute="centerY" secondItem="7Wr-wb-aMm" secondAttribute="centerY" id="OdJ-Wz-QU2"/>
+                                    <constraint firstItem="ENl-ed-JTh" firstAttribute="centerX" secondItem="7Wr-wb-aMm" secondAttribute="centerX" id="iLq-MM-CrV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wa4-ft-nkh" firstAttribute="trailing" secondItem="7Wr-wb-aMm" secondAttribute="trailing" id="9h6-Sl-9xE"/>
+                            <constraint firstAttribute="top" secondItem="MF1-2r-7AO" secondAttribute="top" id="Lmf-6z-WQA"/>
+                            <constraint firstItem="MF1-2r-7AO" firstAttribute="leading" secondItem="wa4-ft-nkh" secondAttribute="leading" id="OxQ-Qf-Rt3"/>
+                            <constraint firstAttribute="top" secondItem="7Wr-wb-aMm" secondAttribute="top" id="VZO-w0-ort"/>
+                            <constraint firstAttribute="bottom" secondItem="MF1-2r-7AO" secondAttribute="bottom" id="hhy-FL-rrJ"/>
+                            <constraint firstItem="wa4-ft-nkh" firstAttribute="trailing" secondItem="MF1-2r-7AO" secondAttribute="trailing" id="jsu-AD-2Iw"/>
+                            <constraint firstAttribute="bottom" secondItem="7Wr-wb-aMm" secondAttribute="bottom" id="kMl-r6-Kxx"/>
+                            <constraint firstItem="7Wr-wb-aMm" firstAttribute="leading" secondItem="wa4-ft-nkh" secondAttribute="leading" id="ntu-5j-UGM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wa4-ft-nkh"/>
+                    </view>
+                    <connections>
+                        <outlet property="authorLabel" destination="ENl-ed-JTh" id="NES-Qz-S3p"/>
+                        <outlet property="backgroundImageView" destination="MF1-2r-7AO" id="0tZ-tj-Z46"/>
+                        <outlet property="quoteLabel" destination="Ge2-Wa-wW2" id="NWe-19-3Eq"/>
+                        <outlet property="textContainerView" destination="7Wr-wb-aMm" id="JIc-EH-2Vz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pi9-Ro-Fyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2922" y="654"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CancelButtonDark" width="26" height="26"/>
+        <image name="CancelButtonLight" width="26" height="26"/>
+        <image name="category1" width="959" height="1343"/>
+    </resources>
+</document>

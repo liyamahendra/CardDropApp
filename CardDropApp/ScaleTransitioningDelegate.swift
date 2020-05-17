@@ -123,7 +123,7 @@ extension ScaleTransitioningDelegate : UINavigationControllerDelegate {
             let navbarVisible = operation == .pop
             navigationController.setNavigationBarHidden(!navbarVisible, animated: true)
             return self
-        }else{
+        } else {
             return nil
         }
         

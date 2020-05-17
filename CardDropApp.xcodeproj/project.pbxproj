@@ -18,10 +18,10 @@
 		52A0E2CA212C61B8001079CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A0E2C8212C61B8001079CA /* LaunchScreen.storyboard */; };
 		52A0E2DA212C6212001079CA /* Images.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52A0E2D2212C6212001079CA /* Images.plist */; };
 		52A0E2DB212C6212001079CA /* Quotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52A0E2D3212C6212001079CA /* Quotes.plist */; };
-		52A0E2DC212C6212001079CA /* Categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52A0E2D4212C6212001079CA /* Categories.plist */; };
-		52A0E2DD212C6212001079CA /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A0E2D6212C6212001079CA /* Image.swift */; };
+		52A0E2DC212C6212001079CA /* YogaPoses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52A0E2D4212C6212001079CA /* YogaPoses.plist */; };
+		52A0E2DD212C6212001079CA /* Pose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A0E2D6212C6212001079CA /* Pose.swift */; };
 		52A0E2DE212C6212001079CA /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A0E2D7212C6212001079CA /* Quote.swift */; };
-		52A0E2DF212C6212001079CA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A0E2D8212C6212001079CA /* Category.swift */; };
+		52A0E2DF212C6212001079CA /* YogaPose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A0E2D8212C6212001079CA /* YogaPose.swift */; };
 		52A0E2E0212C6212001079CA /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A0E2D9212C6212001079CA /* DataRequest.swift */; };
 		52A0E2E2212C69BD001079CA /* OverviewCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A0E2E1212C69BD001079CA /* OverviewCollectionViewController.swift */; };
 		52A0E2E9212C6FE4001079CA /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52A0E2E4212C6FE4001079CA /* Montserrat-Medium.ttf */; };
@@ -30,6 +30,16 @@
 		52A0E2EC212C6FE4001079CA /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52A0E2E7212C6FE4001079CA /* Montserrat-SemiBold.ttf */; };
 		52A0E2ED212C6FE4001079CA /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52A0E2E8212C6FE4001079CA /* Montserrat-Regular.ttf */; };
 		52E47CEF213954D700F6BEF6 /* ScaleTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E47CEE213954D700F6BEF6 /* ScaleTransitioningDelegate.swift */; };
+		EA0AD47F247071BD00EC5276 /* CorposePose.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EA0AD478247071B100EC5276 /* CorposePose.mp4 */; };
+		EA0AD480247071BD00EC5276 /* WheelPose.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EA0AD479247071B300EC5276 /* WheelPose.mp4 */; };
+		EA0AD481247071BD00EC5276 /* MountainPose.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EA0AD47A247071B400EC5276 /* MountainPose.mp4 */; };
+		EA0AD482247071BD00EC5276 /* BridgePose.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EA0AD47B247071B500EC5276 /* BridgePose.mp4 */; };
+		EA0AD483247071BD00EC5276 /* EasyPose.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EA0AD47C247071BB00EC5276 /* EasyPose.mp4 */; };
+		EA0AD484247071BD00EC5276 /* DancerPose.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EA0AD47D247071BB00EC5276 /* DancerPose.mp4 */; };
+		EA0AD485247071BD00EC5276 /* GarlandPose.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EA0AD47E247071BD00EC5276 /* GarlandPose.mp4 */; };
+		EA35C3C92470080E003BBD6A /* YogaPoses.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA35C3C82470080E003BBD6A /* YogaPoses.xcassets */; };
+		EA35C3CF2470197E003BBD6A /* Categories.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA35C3CE2470197E003BBD6A /* Categories.xcassets */; };
+		EA962C4C2470544600953E5D /* LotusPose.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EA962C4B2470544600953E5D /* LotusPose.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,10 +56,10 @@
 		52A0E2CB212C61B8001079CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52A0E2D2212C6212001079CA /* Images.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Images.plist; sourceTree = "<group>"; };
 		52A0E2D3212C6212001079CA /* Quotes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Quotes.plist; sourceTree = "<group>"; };
-		52A0E2D4212C6212001079CA /* Categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Categories.plist; sourceTree = "<group>"; };
-		52A0E2D6212C6212001079CA /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		52A0E2D4212C6212001079CA /* YogaPoses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YogaPoses.plist; sourceTree = "<group>"; };
+		52A0E2D6212C6212001079CA /* Pose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pose.swift; sourceTree = "<group>"; };
 		52A0E2D7212C6212001079CA /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
-		52A0E2D8212C6212001079CA /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		52A0E2D8212C6212001079CA /* YogaPose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YogaPose.swift; sourceTree = "<group>"; };
 		52A0E2D9212C6212001079CA /* DataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		52A0E2E1212C69BD001079CA /* OverviewCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewCollectionViewController.swift; sourceTree = "<group>"; };
 		52A0E2E4212C6FE4001079CA /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
@@ -58,6 +68,16 @@
 		52A0E2E7212C6FE4001079CA /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		52A0E2E8212C6FE4001079CA /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		52E47CEE213954D700F6BEF6 /* ScaleTransitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleTransitioningDelegate.swift; sourceTree = "<group>"; };
+		EA0AD478247071B100EC5276 /* CorposePose.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CorposePose.mp4; sourceTree = "<group>"; };
+		EA0AD479247071B300EC5276 /* WheelPose.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WheelPose.mp4; sourceTree = "<group>"; };
+		EA0AD47A247071B400EC5276 /* MountainPose.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MountainPose.mp4; sourceTree = "<group>"; };
+		EA0AD47B247071B500EC5276 /* BridgePose.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BridgePose.mp4; sourceTree = "<group>"; };
+		EA0AD47C247071BB00EC5276 /* EasyPose.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = EasyPose.mp4; sourceTree = "<group>"; };
+		EA0AD47D247071BB00EC5276 /* DancerPose.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = DancerPose.mp4; sourceTree = "<group>"; };
+		EA0AD47E247071BD00EC5276 /* GarlandPose.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GarlandPose.mp4; sourceTree = "<group>"; };
+		EA35C3C82470080E003BBD6A /* YogaPoses.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = YogaPoses.xcassets; sourceTree = "<group>"; };
+		EA35C3CE2470197E003BBD6A /* Categories.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Categories.xcassets; sourceTree = "<group>"; };
+		EA962C4B2470544600953E5D /* LotusPose.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = LotusPose.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +91,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C648E10A2D59BC476223E6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		523D304A213BE6B90048BFA0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +122,7 @@
 			children = (
 				52A0E2BE212C61B7001079CA /* CardDropApp */,
 				52A0E2BD212C61B7001079CA /* Products */,
+				1C648E10A2D59BC476223E6E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,18 +137,18 @@
 		52A0E2BE212C61B7001079CA /* CardDropApp */ = {
 			isa = PBXGroup;
 			children = (
-				52A0E2E3212C6FE4001079CA /* Fonts */,
-				52A0E2D5212C6212001079CA /* Model */,
-				52A0E2D1212C6212001079CA /* Data */,
+				52A0E2CB212C61B8001079CA /* Info.plist */,
 				52A0E2BF212C61B7001079CA /* AppDelegate.swift */,
 				52351D93212D9AA7002F80C4 /* CategoryCollectionViewCell.swift */,
 				52E47CEE213954D700F6BEF6 /* ScaleTransitioningDelegate.swift */,
-				523D304A213BE6B90048BFA0 /* ViewControllers */,
-				523D304B213BE6C80048BFA0 /* PhotoView */,
-				52A0E2C3212C61B7001079CA /* Main.storyboard */,
 				52A0E2C6212C61B8001079CA /* Assets.xcassets */,
-				52A0E2C8212C61B8001079CA /* LaunchScreen.storyboard */,
-				52A0E2CB212C61B8001079CA /* Info.plist */,
+				EA35C3D3247022EE003BBD6A /* Assets */,
+				52A0E2D1212C6212001079CA /* Data */,
+				52A0E2E3212C6FE4001079CA /* Fonts */,
+				52A0E2D5212C6212001079CA /* Model */,
+				523D304B213BE6C80048BFA0 /* PhotoView */,
+				523D304A213BE6B90048BFA0 /* ViewControllers */,
+				EA35C3D2247022C4003BBD6A /* UI */,
 			);
 			path = CardDropApp;
 			sourceTree = "<group>";
@@ -130,7 +158,7 @@
 			children = (
 				52A0E2D2212C6212001079CA /* Images.plist */,
 				52A0E2D3212C6212001079CA /* Quotes.plist */,
-				52A0E2D4212C6212001079CA /* Categories.plist */,
+				52A0E2D4212C6212001079CA /* YogaPoses.plist */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -138,9 +166,9 @@
 		52A0E2D5212C6212001079CA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				52A0E2D6212C6212001079CA /* Image.swift */,
+				52A0E2D6212C6212001079CA /* Pose.swift */,
 				52A0E2D7212C6212001079CA /* Quote.swift */,
-				52A0E2D8212C6212001079CA /* Category.swift */,
+				52A0E2D8212C6212001079CA /* YogaPose.swift */,
 				52A0E2D9212C6212001079CA /* DataRequest.swift */,
 			);
 			path = Model;
@@ -156,6 +184,32 @@
 				52A0E2E8212C6FE4001079CA /* Montserrat-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EA35C3D2247022C4003BBD6A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				52A0E2C8212C61B8001079CA /* LaunchScreen.storyboard */,
+				52A0E2C3212C61B7001079CA /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EA35C3D3247022EE003BBD6A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EA0AD47B247071B500EC5276 /* BridgePose.mp4 */,
+				EA0AD478247071B100EC5276 /* CorposePose.mp4 */,
+				EA0AD47D247071BB00EC5276 /* DancerPose.mp4 */,
+				EA0AD47C247071BB00EC5276 /* EasyPose.mp4 */,
+				EA0AD47E247071BD00EC5276 /* GarlandPose.mp4 */,
+				EA0AD47A247071B400EC5276 /* MountainPose.mp4 */,
+				EA0AD479247071B300EC5276 /* WheelPose.mp4 */,
+				EA962C4B2470544600953E5D /* LotusPose.mp4 */,
+				EA35C3CE2470197E003BBD6A /* Categories.xcassets */,
+				EA35C3C82470080E003BBD6A /* YogaPoses.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,16 +270,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA0AD47F247071BD00EC5276 /* CorposePose.mp4 in Resources */,
 				52A0E2DA212C6212001079CA /* Images.plist in Resources */,
 				52A0E2ED212C6FE4001079CA /* Montserrat-Regular.ttf in Resources */,
+				EA962C4C2470544600953E5D /* LotusPose.mp4 in Resources */,
 				52A0E2CA212C61B8001079CA /* LaunchScreen.storyboard in Resources */,
+				EA0AD480247071BD00EC5276 /* WheelPose.mp4 in Resources */,
 				52A0E2C7212C61B8001079CA /* Assets.xcassets in Resources */,
+				EA35C3C92470080E003BBD6A /* YogaPoses.xcassets in Resources */,
 				52A0E2E9212C6FE4001079CA /* Montserrat-Medium.ttf in Resources */,
 				52A0E2EC212C6FE4001079CA /* Montserrat-SemiBold.ttf in Resources */,
+				EA0AD482247071BD00EC5276 /* BridgePose.mp4 in Resources */,
 				52A0E2DB212C6212001079CA /* Quotes.plist in Resources */,
+				EA0AD483247071BD00EC5276 /* EasyPose.mp4 in Resources */,
+				EA0AD484247071BD00EC5276 /* DancerPose.mp4 in Resources */,
+				EA0AD485247071BD00EC5276 /* GarlandPose.mp4 in Resources */,
 				52A0E2EB212C6FE4001079CA /* Montserrat-Bold.ttf in Resources */,
 				52A0E2EA212C6FE4001079CA /* Montserrat-ExtraLight.ttf in Resources */,
-				52A0E2DC212C6212001079CA /* Categories.plist in Resources */,
+				52A0E2DC212C6212001079CA /* YogaPoses.plist in Resources */,
+				EA35C3CF2470197E003BBD6A /* Categories.xcassets in Resources */,
+				EA0AD481247071BD00EC5276 /* MountainPose.mp4 in Resources */,
 				52A0E2C5212C61B7001079CA /* Main.storyboard in Resources */,
 				523D3043213AD87E0048BFA0 /* PhotoView.xib in Resources */,
 			);
@@ -240,13 +304,13 @@
 			files = (
 				52A0E2DE212C6212001079CA /* Quote.swift in Sources */,
 				52351D96212DDDF5002F80C4 /* ImageSelectionViewController.swift in Sources */,
-				52A0E2DF212C6212001079CA /* Category.swift in Sources */,
+				52A0E2DF212C6212001079CA /* YogaPose.swift in Sources */,
 				523D3047213ADFD40048BFA0 /* PhotoView.swift in Sources */,
 				523D3049213BE6AF0048BFA0 /* SendCardViewController.swift in Sources */,
 				52A0E2E0212C6212001079CA /* DataRequest.swift in Sources */,
 				52E47CEF213954D700F6BEF6 /* ScaleTransitioningDelegate.swift in Sources */,
 				52A0E2E2212C69BD001079CA /* OverviewCollectionViewController.swift in Sources */,
-				52A0E2DD212C6212001079CA /* Image.swift in Sources */,
+				52A0E2DD212C6212001079CA /* Pose.swift in Sources */,
 				52351D94212D9AA7002F80C4 /* CategoryCollectionViewCell.swift in Sources */,
 				52A0E2C0212C61B7001079CA /* AppDelegate.swift in Sources */,
 			);

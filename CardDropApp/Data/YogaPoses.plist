@@ -6,9 +6,10 @@
 		<key>categoryID</key>
 		<string>1</string>
 		<key>categoryName</key>
-		<string>Standing Yoga Poses</string>
+		<string>VARM 
+kropp</string>
 		<key>categoryImageName</key>
-		<string>category-standing-yoga</string>
+		<string>Canva - VARM KROPP_test</string>
 		<key>categoryDescription</key>
 		<string>TEST</string>
 		<key>poses</key>
@@ -19,13 +20,13 @@
 				<key>imageName</key>
 				<string>Dancer Pose</string>
 				<key>photographer</key>
-				<string>The Photographer</string>
+				<string>Ida presenterer kurset og blablbalbl  jkjdaj jk jr jkjklll  jkrejkrl j</string>
 				<key>description</key>
-				<string>The Dancer Pose</string>
+				<string>Oppvarming og introduksjon</string>
 				<key>mediaPath</key>
-				<string>DancerPose</string>
+				<string>https://player.vimeo.com/external/415088892.sd.mp4?s=7ef80cba3a9a57c02e67e7a75977bcc22d70500d&amp;profile_id=165</string>
 				<key>isLocal</key>
-				<true/>
+				<false/>
 			</dict>
 			<dict>
 				<key>imageID</key>
@@ -37,7 +38,7 @@
 				<key>description</key>
 				<string>The Eagle Pose</string>
 				<key>mediaPath</key>
-				<string>https://v.ftcdn.net/01/98/24/81/700_F_198248166_JdbGwc6mdrvkC4NOGrysjr89idzGSj4b_ST.mp4</string>
+				<string>https://player.vimeo.com/external/412140903.sd.mp4?s=1a6103aecf70266415dc2cdee86f81608f6bea10&amp;profile_id=164</string>
 				<key>isLocal</key>
 				<false/>
 			</dict>
@@ -51,9 +52,9 @@
 				<key>description</key>
 				<string>The Mountain Pose</string>
 				<key>mediaPath</key>
-				<string>MountainPose</string>
+				<string>https://player.vimeo.com/external/407941332.sd.mp4?s=02171c441ec151a68fff59e73ef6e5afd86d70d4&amp;profile_id=165</string>
 				<key>isLocal</key>
-				<true/>
+				<false/>
 			</dict>
 			<dict>
 				<key>imageID</key>
@@ -65,7 +66,7 @@
 				<key>description</key>
 				<string>The Tree Pose</string>
 				<key>mediaPath</key>
-				<string>https://v.ftcdn.net/03/30/73/44/700_F_330734493_G89P2w5VpL4WWHXYCdeoXvf6Hx3Rcmei_ST.mp4</string>
+				<string>https://player.vimeo.com/external/421237853.sd.mp4?s=93416278f92593f2b326908dba10fb8a573b08c4&amp;profile_id=165</string>
 				<key>isLocal</key>
 				<false/>
 			</dict>
@@ -75,9 +76,9 @@
 		<key>categoryID</key>
 		<string>2</string>
 		<key>categoryName</key>
-		<string>Sitting Yoga Poses</string>
+		<string>VARM pust</string>
 		<key>categoryImageName</key>
-		<string>category-sitting-yoga</string>
+		<string>Canva - VARM PUST</string>
 		<key>categoryDescription</key>
 		<string>TEST</string>
 		<key>poses</key>
@@ -88,11 +89,11 @@
 				<key>imageName</key>
 				<string>Fire Log Pose</string>
 				<key>photographer</key>
-				<string>The Photographer</string>
+				<string>Mette Vaag</string>
 				<key>description</key>
-				<string>The Fire Log Pose</string>
+				<string>Kroppscanning</string>
 				<key>mediaPath</key>
-				<string>https://v.ftcdn.net/02/25/46/28/700_F_225462891_QWyiIPNBeQFfVmtJfelBtQOAjzSjr3c7_ST.mp4</string>
+				<string>https://player.vimeo.com/external/412140903.sd.mp4?s=1a6103aecf70266415dc2cdee86f81608f6bea10&amp;profile_id=164</string>
 				<key>isLocal</key>
 				<false/>
 			</dict>
@@ -102,13 +103,13 @@
 				<key>imageName</key>
 				<string>Garland Pose</string>
 				<key>photographer</key>
-				<string>The Photographer</string>
+				<string>Mette Vaag</string>
 				<key>description</key>
-				<string>The Garland Pose</string>
+				<string>Pusten som anker</string>
 				<key>mediaPath</key>
-				<string>GarlandPose</string>
+				<string>https://player.vimeo.com/external/407941332.sd.mp4?s=02171c441ec151a68fff59e73ef6e5afd86d70d4&amp;profile_id=165</string>
 				<key>isLocal</key>
-				<true/>
+				<false/>
 			</dict>
 			<dict>
 				<key>imageID</key>
@@ -116,11 +117,11 @@
 				<key>imageName</key>
 				<string>Hero Pose</string>
 				<key>photographer</key>
-				<string>The Photographer</string>
+				<string>Mette Vaag</string>
 				<key>description</key>
-				<string>The Hero Pose</string>
+				<string>Kort meditasjon (3 min)</string>
 				<key>mediaPath</key>
-				<string>https://v.ftcdn.net/03/24/79/84/700_F_324798458_VHGNtAReeoNtNU6Lgd3AaQJa94dVceEx_ST.mp4</string>
+				<string>https://player.vimeo.com/external/421237853.sd.mp4?s=93416278f92593f2b326908dba10fb8a573b08c4&amp;profile_id=165</string>
 				<key>isLocal</key>
 				<false/>
 			</dict>
@@ -130,9 +131,9 @@
 		<key>categoryID</key>
 		<string>3</string>
 		<key>categoryName</key>
-		<string>Supine Yoga Poses</string>
+		<string>VARM ro</string>
 		<key>categoryImageName</key>
-		<string>category-supine-yoga</string>
+		<string>Canva - VARM RO</string>
 		<key>categoryDescription</key>
 		<string>TEST</string>
 		<key>poses</key>
@@ -147,9 +148,9 @@
 				<key>description</key>
 				<string>The Bridge Pose</string>
 				<key>mediaPath</key>
-				<string>BridgePose</string>
+				<string>https://player.vimeo.com/external/415088892.sd.mp4?s=7ef80cba3a9a57c02e67e7a75977bcc22d70500d&amp;profile_id=165</string>
 				<key>isLocal</key>
-				<true/>
+				<false/>
 			</dict>
 			<dict>
 				<key>imageID</key>
@@ -175,9 +176,9 @@
 				<key>description</key>
 				<string>The Wheel Pose</string>
 				<key>mediaPath</key>
-				<string>WheelPose</string>
+				<string>https://player.vimeo.com/external/415088892.sd.mp4?s=7ef80cba3a9a57c02e67e7a75977bcc22d70500d&amp;profile_id=165</string>
 				<key>isLocal</key>
-				<true/>
+				<false/>
 			</dict>
 			<dict>
 				<key>imageID</key>
@@ -199,9 +200,9 @@
 		<key>categoryID</key>
 		<string>4</string>
 		<key>categoryName</key>
-		<string>Balancing Yoga Poses</string>
+		<string>VARM kunnskap</string>
 		<key>categoryImageName</key>
-		<string>category-balancing-yoga</string>
+		<string>Canva - VARM KUNNSKAP</string>
 		<key>categoryDescription</key>
 		<string>TEST</string>
 		<key>poses</key>
@@ -226,9 +227,10 @@
 		<key>categoryID</key>
 		<string>5</string>
 		<key>categoryName</key>
-		<string>Relaxing Yoga Poses</string>
+		<string>VARM 
+online</string>
 		<key>categoryImageName</key>
-		<string>category-relaxation-yoga</string>
+		<string>Canva -VARM ONLINE</string>
 		<key>categoryDescription</key>
 		<string>TEST</string>
 		<key>poses</key>
@@ -257,9 +259,9 @@
 				<key>description</key>
 				<string>The Corpose Pose</string>
 				<key>mediaPath</key>
-				<string>CorposePose</string>
+				<string>https://player.vimeo.com/external/412140903.sd.mp4?s=1a6103aecf70266415dc2cdee86f81608f6bea10&amp;profile_id=164</string>
 				<key>isLocal</key>
-				<true/>
+				<false/>
 			</dict>
 			<dict>
 				<key>imageID</key>
@@ -281,9 +283,9 @@
 		<key>categoryID</key>
 		<string>6</string>
 		<key>categoryName</key>
-		<string>Meditative Yoga Poses</string>
+		<string>VARM  kropp</string>
 		<key>categoryImageName</key>
-		<string>category-meditation-yoga</string>
+		<string>Canva - VARM KROPP_test</string>
 		<key>categoryDescription</key>
 		<string>TEST</string>
 		<key>poses</key>
@@ -298,9 +300,9 @@
 				<key>description</key>
 				<string>The Easy Pose</string>
 				<key>mediaPath</key>
-				<string>EasyPose</string>
+				<string>https://player.vimeo.com/external/407941332.sd.mp4?s=02171c441ec151a68fff59e73ef6e5afd86d70d4&amp;profile_id=165</string>
 				<key>isLocal</key>
-				<true/>
+				<false/>
 			</dict>
 			<dict>
 				<key>imageID</key>
@@ -326,9 +328,9 @@
 				<key>description</key>
 				<string>The Lotus Pose</string>
 				<key>mediaPath</key>
-				<string>LotusPose</string>
+				<string>https://player.vimeo.com/external/421237853.sd.mp4?s=93416278f92593f2b326908dba10fb8a573b08c4&amp;profile_id=165</string>
 				<key>isLocal</key>
-				<true/>
+				<false/>
 			</dict>
 		</array>
 	</dict>

@@ -30,16 +30,8 @@
 		52A0E2EC212C6FE4001079CA /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52A0E2E7212C6FE4001079CA /* Montserrat-SemiBold.ttf */; };
 		52A0E2ED212C6FE4001079CA /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52A0E2E8212C6FE4001079CA /* Montserrat-Regular.ttf */; };
 		52E47CEF213954D700F6BEF6 /* ScaleTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E47CEE213954D700F6BEF6 /* ScaleTransitioningDelegate.swift */; };
-		EA0AD47F247071BD00EC5276 /* CorposePose.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EA0AD478247071B100EC5276 /* CorposePose.mp4 */; };
-		EA0AD480247071BD00EC5276 /* WheelPose.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EA0AD479247071B300EC5276 /* WheelPose.mp4 */; };
-		EA0AD481247071BD00EC5276 /* MountainPose.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EA0AD47A247071B400EC5276 /* MountainPose.mp4 */; };
-		EA0AD482247071BD00EC5276 /* BridgePose.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EA0AD47B247071B500EC5276 /* BridgePose.mp4 */; };
-		EA0AD483247071BD00EC5276 /* EasyPose.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EA0AD47C247071BB00EC5276 /* EasyPose.mp4 */; };
-		EA0AD484247071BD00EC5276 /* DancerPose.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EA0AD47D247071BB00EC5276 /* DancerPose.mp4 */; };
-		EA0AD485247071BD00EC5276 /* GarlandPose.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EA0AD47E247071BD00EC5276 /* GarlandPose.mp4 */; };
 		EA35C3C92470080E003BBD6A /* YogaPoses.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA35C3C82470080E003BBD6A /* YogaPoses.xcassets */; };
 		EA35C3CF2470197E003BBD6A /* Categories.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA35C3CE2470197E003BBD6A /* Categories.xcassets */; };
-		EA962C4C2470544600953E5D /* LotusPose.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EA962C4B2470544600953E5D /* LotusPose.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,16 +60,8 @@
 		52A0E2E7212C6FE4001079CA /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		52A0E2E8212C6FE4001079CA /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		52E47CEE213954D700F6BEF6 /* ScaleTransitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleTransitioningDelegate.swift; sourceTree = "<group>"; };
-		EA0AD478247071B100EC5276 /* CorposePose.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CorposePose.mp4; sourceTree = "<group>"; };
-		EA0AD479247071B300EC5276 /* WheelPose.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WheelPose.mp4; sourceTree = "<group>"; };
-		EA0AD47A247071B400EC5276 /* MountainPose.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MountainPose.mp4; sourceTree = "<group>"; };
-		EA0AD47B247071B500EC5276 /* BridgePose.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BridgePose.mp4; sourceTree = "<group>"; };
-		EA0AD47C247071BB00EC5276 /* EasyPose.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = EasyPose.mp4; sourceTree = "<group>"; };
-		EA0AD47D247071BB00EC5276 /* DancerPose.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = DancerPose.mp4; sourceTree = "<group>"; };
-		EA0AD47E247071BD00EC5276 /* GarlandPose.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GarlandPose.mp4; sourceTree = "<group>"; };
 		EA35C3C82470080E003BBD6A /* YogaPoses.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = YogaPoses.xcassets; sourceTree = "<group>"; };
 		EA35C3CE2470197E003BBD6A /* Categories.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Categories.xcassets; sourceTree = "<group>"; };
-		EA962C4B2470544600953E5D /* LotusPose.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = LotusPose.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,14 +182,6 @@
 		EA35C3D3247022EE003BBD6A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				EA0AD47B247071B500EC5276 /* BridgePose.mp4 */,
-				EA0AD478247071B100EC5276 /* CorposePose.mp4 */,
-				EA0AD47D247071BB00EC5276 /* DancerPose.mp4 */,
-				EA0AD47C247071BB00EC5276 /* EasyPose.mp4 */,
-				EA0AD47E247071BD00EC5276 /* GarlandPose.mp4 */,
-				EA0AD47A247071B400EC5276 /* MountainPose.mp4 */,
-				EA0AD479247071B300EC5276 /* WheelPose.mp4 */,
-				EA962C4B2470544600953E5D /* LotusPose.mp4 */,
 				EA35C3CE2470197E003BBD6A /* Categories.xcassets */,
 				EA35C3C82470080E003BBD6A /* YogaPoses.xcassets */,
 			);
@@ -270,26 +246,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA0AD47F247071BD00EC5276 /* CorposePose.mp4 in Resources */,
 				52A0E2DA212C6212001079CA /* Images.plist in Resources */,
 				52A0E2ED212C6FE4001079CA /* Montserrat-Regular.ttf in Resources */,
-				EA962C4C2470544600953E5D /* LotusPose.mp4 in Resources */,
 				52A0E2CA212C61B8001079CA /* LaunchScreen.storyboard in Resources */,
-				EA0AD480247071BD00EC5276 /* WheelPose.mp4 in Resources */,
 				52A0E2C7212C61B8001079CA /* Assets.xcassets in Resources */,
 				EA35C3C92470080E003BBD6A /* YogaPoses.xcassets in Resources */,
 				52A0E2E9212C6FE4001079CA /* Montserrat-Medium.ttf in Resources */,
 				52A0E2EC212C6FE4001079CA /* Montserrat-SemiBold.ttf in Resources */,
-				EA0AD482247071BD00EC5276 /* BridgePose.mp4 in Resources */,
 				52A0E2DB212C6212001079CA /* Quotes.plist in Resources */,
-				EA0AD483247071BD00EC5276 /* EasyPose.mp4 in Resources */,
-				EA0AD484247071BD00EC5276 /* DancerPose.mp4 in Resources */,
-				EA0AD485247071BD00EC5276 /* GarlandPose.mp4 in Resources */,
 				52A0E2EB212C6FE4001079CA /* Montserrat-Bold.ttf in Resources */,
 				52A0E2EA212C6FE4001079CA /* Montserrat-ExtraLight.ttf in Resources */,
 				52A0E2DC212C6212001079CA /* YogaPoses.plist in Resources */,
 				EA35C3CF2470197E003BBD6A /* Categories.xcassets in Resources */,
-				EA0AD481247071BD00EC5276 /* MountainPose.mp4 in Resources */,
 				52A0E2C5212C61B7001079CA /* Main.storyboard in Resources */,
 				523D3043213AD87E0048BFA0 /* PhotoView.xib in Resources */,
 			);

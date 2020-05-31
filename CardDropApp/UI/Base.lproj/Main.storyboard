@@ -22,9 +22,9 @@
         <!--VARM-->
         <scene sceneID="5Ik-4M-91h">
             <objects>
-                <collectionViewController id="KRw-u8-Nrk" customClass="OverviewCollectionViewController" customModule="CardDropApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="pCs-mT-tPJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                <collectionViewController id="KRw-u8-Nrk" customClass="OverviewCollectionViewController" customModule="Varm_Yoga" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="pCs-mT-tPJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="571"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="e8x-uP-A9r">
@@ -34,7 +34,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="bAg-WA-wrR" customClass="CategoryCollectionViewCell" customModule="CardDropApp" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="bAg-WA-wrR" customClass="CategoryCollectionViewCell" customModule="Varm_Yoga" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -78,7 +78,7 @@
         <!--Image Selection View Controller-->
         <scene sceneID="Jlh-JO-w9z">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="eM6-pT-wge" customClass="ImageSelectionViewController" customModule="CardDropApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="eM6-pT-wge" customClass="ImageSelectionViewController" customModule="Varm_Yoga" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="efy-S2-bRO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,7 +92,7 @@
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRQ-Ws-1TN">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cjf-zW-vfd">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Category" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cjf-zW-vfd">
                                                 <rect key="frame" x="30" y="425" width="325" height="33"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="28"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -180,14 +180,14 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KTX-3p-pmh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="hR8-zV-QQg" customClass="ScaleTransitioningDelegate" customModule="CardDropApp" customModuleProvider="target"/>
+                <customObject id="hR8-zV-QQg" customClass="ScaleTransitioningDelegate" customModule="Varm_Yoga" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="82" y="654"/>
         </scene>
         <!--Send Card View Controller-->
         <scene sceneID="b2T-xS-26a">
             <objects>
-                <viewController id="RiG-Sb-BHa" customClass="SendCardViewController" customModule="CardDropApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RiG-Sb-BHa" customClass="SendCardViewController" customModule="Varm_Yoga" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7fX-CH-g5d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

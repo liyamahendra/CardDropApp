@@ -257,7 +257,7 @@ online</string>
 				<key>imageID</key>
 				<string>1</string>
 				<key>imageName</key>
-				<string>Child Pose</string>
+				<string>Canva -VARM ONLINE</string>
 				<key>photographer</key>
 				<string>Under utvikling</string>
 				<key>description</key>
@@ -265,7 +265,7 @@ online</string>
 				<key>mediaPath</key>
 				<string></string>
 				<key>isLocal</key>
-				<false/>
+				<true/>
 			</dict>
 		</array>
 	</dict>

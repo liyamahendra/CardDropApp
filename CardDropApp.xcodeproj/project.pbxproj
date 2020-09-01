@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -216,7 +216,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = "Brian Advent";
+				ORGANIZATIONNAME = "Varm Yoga";
 				TargetAttributes = {
 					52A0E2BB212C61B7001079CA = {
 						CreatedOnToolsVersion = 10.0;
@@ -224,7 +224,7 @@
 				};
 			};
 			buildConfigurationList = 52A0E2B7212C61B7001079CA /* Build configuration list for PBXProject "CardDropApp" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -427,7 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ML8B46T72F;
+				DEVELOPMENT_TEAM = ZQPDRSJ9DF;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = CardDropApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -435,10 +435,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brianadvent.CardDropApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.varmyoga.app;
 				PRODUCT_NAME = "Varm Yoga";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -447,7 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ML8B46T72F;
+				DEVELOPMENT_TEAM = ZQPDRSJ9DF;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = CardDropApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -455,10 +455,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brianadvent.CardDropApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.varmyoga.app;
 				PRODUCT_NAME = "Varm Yoga";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

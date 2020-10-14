@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class SendCardViewController: UIViewController {
     
@@ -16,7 +17,7 @@ class SendCardViewController: UIViewController {
     @IBOutlet weak var authorLabel: UILabel!
     
     var backgroundImage:UIImage?
-    let quoteDataRequest = DataRequest<Quote>(dataSource: "Quotes")
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,18 +30,11 @@ class SendCardViewController: UIViewController {
     }
     
     func loadData() {
-        
-        quoteDataRequest.getData{ [weak self] dataResult in
-            switch dataResult {
-            case .failure:
-                print("Could not load images")
-            case .success (let quotes):
-                let randomNumber = Int.random(in: 0 ..< quotes.count)
-                DispatchQueue.main.async {
-                    self?.authorLabel.text = quotes[randomNumber].author
-                    self?.quoteLabel.text = quotes[randomNumber].quote
-                }
-            }
+        if let request = RequestModel.getAllCategories.constructURLRequest() {
+            APIClient.sharedInstance.performRequest(request: request, canCancelRequest: false, completion: { (response) in
+                ProgressHUD.dismiss()
+                print("Response: ", response)
+            })
         }
     }
     

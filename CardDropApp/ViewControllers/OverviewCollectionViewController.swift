@@ -7,12 +7,10 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class OverviewCollectionViewController: UICollectionViewController {
 
-    let yogaPoseDataRequest = DataRequest<YogaPose>(dataSource: "YogaPoses")
-    var yogaPoseData = [YogaPose]()
-    
     var selectedIndexPath:IndexPath?
     
     override func viewDidLoad() {
@@ -21,25 +19,26 @@ class OverviewCollectionViewController: UICollectionViewController {
     }
     
     func loadData() {
-        yogaPoseDataRequest.getData{ [weak self] dataResult in
-            switch dataResult {
-            case .failure:
-                print("Could not load categories")
-            case .success(let cateogires):
-                self?.yogaPoseData = cateogires
-                self?.collectionView.reloadData()
-            }
+        ProgressHUD.show()
+        if let request = RequestModel.getAllCategories.constructURLRequest() {
+            APIClient.sharedInstance.performRequest(request: request, canCancelRequest: false, completion: { (response) in
+                ProgressHUD.dismiss()
+                do {
+                    let data = try JSONSerialization.data(withJSONObject: response.resultObj!, options: .prettyPrinted)
+                    DataStore.categories = try JSONDecoder().decode(Category.self, from: data)
+                    self.collectionView.reloadData()
+                } catch {
+                    print("Error while decoding the categories response.")
+                }
+            })
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
-            let yogaPose = sender as! YogaPose
-            guard let image = UIImage(named: yogaPose.categoryImageName) else {return}
-            
+            let categoryPose = sender as! CategoryData
             let imageSelectionVC = segue.destination as! ImageSelectionViewController
-            imageSelectionVC.image = image
-            imageSelectionVC.yogaPose = yogaPose
+            imageSelectionVC.categoryData = categoryPose
         }
     }
     
@@ -53,19 +52,16 @@ extension OverviewCollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return yogaPoseData.count
+        return DataStore.categories?.data?.count ?? 0
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? CategoryCollectionViewCell else {fatalError("Could not create proper cateogry cell for collection view")}
-        
-        let category = yogaPoseData[indexPath.item]
-        
-        guard let image = UIImage(named: category.categoryImageName) else {fatalError("Could not load image for cell")}
-        
-        cell.backgroundImageView.image = image
-        cell.categoryLabel.text = category.categoryName
+
+        let categoryData = DataStore.categories?.data?[indexPath.row]
+        cell.backgroundImageView.imageURL(categoryData?.imageURL ?? "")
+        cell.categoryLabel.text = categoryData?.name
         
         return cell
     }
@@ -81,9 +77,9 @@ extension OverviewCollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let category = yogaPoseData[indexPath.item]
+        let categoryData = DataStore.categories?.data?[indexPath.item]
         selectedIndexPath = indexPath
-        self.performSegue(withIdentifier: "showDetail", sender: category)
+        self.performSegue(withIdentifier: "showDetail", sender: categoryData)
         
     }
 }

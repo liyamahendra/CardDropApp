@@ -11,13 +11,10 @@ import AVKit
 import AVFoundation
 
 class ImageSelectionViewController: UIViewController {
+    
+    var categoryData:CategoryData?
+    var allPoses = [Pose]()
 
-    var image:UIImage?
-    var yogaPose:YogaPose?
-    
-    //let imageDataRequest = DataRequest<Pose>(dataSource: "Images")
-    var imageData = [Pose]()
-    
     @IBOutlet weak var initialImageView: UIImageView!
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -33,12 +30,10 @@ class ImageSelectionViewController: UIViewController {
         initialDimView.alpha = 0
         backButton.alpha = 0
         
-        if let availableImage = image, let availableCategory = yogaPose {
-            initialImageView.image = availableImage
-            categoryLabel.text = availableCategory.categoryName
-        }
+        initialImageView.imageURL(categoryData?.imageURL ?? "")
+        categoryLabel.text = categoryData?.name
         
-        imageData = (yogaPose?.poses)! as [Pose]
+        allPoses = (categoryData?.poses)! as [Pose]
     }
     
     
@@ -47,22 +42,6 @@ class ImageSelectionViewController: UIViewController {
         //loadData()
         setupUI()
     }
-    
-    
-//    func loadData() {
-//        imageDataRequest.getData{ [weak self] dataResult in
-//            switch dataResult {
-//            case .failure:
-//                print("Could not load images")
-//            case .success(let images):
-//                self?.imageData = images
-//                DispatchQueue.main.async {
-//                    self?.setupUI()
-//                }
-//            }
-//
-//        }
-//    }
     
     func setupUI() {
         
@@ -73,18 +52,18 @@ class ImageSelectionViewController: UIViewController {
         
         scrollView.delegate = self
         
-        scrollView.contentSize.width = self.scrollView.frame.width * CGFloat(imageData.count + 1)
+        scrollView.contentSize.width = self.scrollView.frame.width * CGFloat(allPoses.count + 1)
         
-        for (i, image) in imageData.enumerated() {
+        for (i, pose) in allPoses.enumerated() {
             let frame = CGRect(x: self.scrollView.frame.width * CGFloat(i + 1), y: 0, width: self.scrollView.frame.width, height: self.scrollView.frame.height)
             
             guard let photoView = Bundle.main.loadNibNamed("PhotoView", owner: self, options: nil)?.first as? PhotoView else {return}
             
             photoView.frame = frame
-            photoView.imageView.image = UIImage(named: image.imageName)!
+            photoView.imageView.imageURL(pose.imageURL ?? "")
             
-            photoView.descriptionLabel.text = image.description
-            photoView.photographerLabel.text = image.photographer
+            photoView.descriptionLabel.text = pose.description
+            photoView.photographerLabel.text = pose.photographer
             
             scrollView.addSubview(photoView)
         }
@@ -98,8 +77,8 @@ class ImageSelectionViewController: UIViewController {
     @objc
     func didPressOnScrollView (recognizer:UITapGestureRecognizer) {
         if currentScrollViewPage != 0 {
-            //self.performSegue(withIdentifier: "showCard", sender: self)
-            playVideo()
+            self.performSegue(withIdentifier: "showPoseDetails", sender: self)
+            //playVideo()
         }else{
             scrollView.setContentOffset(CGPoint(x: self.view.frame.width, y: 0), animated: true)
             currentScrollViewPage = 1
@@ -125,30 +104,36 @@ class ImageSelectionViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showCard" {
             guard let sendCardVC = segue.destination as? SendCardViewController else {return}
-            guard let imageToSend = UIImage(named: imageData[currentScrollViewPage - 1].imageName) else {return}
+            //guard let imageToSend = UIImage(named: poses[currentScrollViewPage - 1].imageName) else {return}
+            var imageToSend: UIImage?
+            let url = URL(string: allPoses[currentScrollViewPage - 1].imageURL ?? "")
+
+            DispatchQueue.global().async {
+                let data = try? Data(contentsOf: url!)
+                DispatchQueue.main.async {
+                    imageToSend = UIImage(data: data!)
+                }
+            }
             
             sendCardVC.backgroundImage = imageToSend
             sendCardVC.modalTransitionStyle = .crossDissolve
+        } else if segue.identifier == "showPoseDetails" {
+            guard let poseDetailsVC = segue.destination as? PoseDetailsViewController else {return}
+            poseDetailsVC.selectedPose = allPoses[currentScrollViewPage - 1]
+            poseDetailsVC.modalTransitionStyle = .crossDissolve
         }
     }
     
     func playVideo() {
-        var mediaPath = imageData[currentScrollViewPage - 1].mediaPath
-        let isLocal = imageData[currentScrollViewPage - 1].isLocal
-        
-        if isLocal {
-            mediaPath = Bundle.main.path(forResource: mediaPath, ofType:"mp4")! // FIXME: Hard coding extension
+        if allPoses.count > 0, let videoURL = allPoses[currentScrollViewPage - 1].videoURL {
+            let mediaURL = URL(string: videoURL)!
+            let player = AVPlayer(url: mediaURL)
+            let playerController = AVPlayerViewController()
+            playerController.player = player
+            UIApplication.shared.keyWindow?.rootViewController?.present(playerController, animated: true, completion: {
+                player.play()
+            })
         }
-        
-        let mediaURL = (isLocal) ? URL(fileURLWithPath: mediaPath) : URL(string: mediaPath)
-        let player = AVPlayer(url: mediaURL!)
-        
-        let playerController = AVPlayerViewController()
-        playerController.player = player
-        
-        UIApplication.shared.keyWindow?.rootViewController?.present(playerController, animated: true, completion: {
-            player.play()
-        })
     }
     
 }

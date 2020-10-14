@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EnQ-dg-ry5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EnQ-dg-ry5">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -23,8 +24,8 @@
         <scene sceneID="5Ik-4M-91h">
             <objects>
                 <collectionViewController id="KRw-u8-Nrk" customClass="OverviewCollectionViewController" customModule="Varm_Yoga" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="pCs-mT-tPJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="571"/>
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="pCs-mT-tPJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="e8x-uP-A9r">
@@ -41,7 +42,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="category1" translatesAutoresizingMaskIntoConstraints="NO" id="dP1-a6-jt1">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dP1-a6-jt1">
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
@@ -86,20 +87,20 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ff-yd-VIX">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="category1" translatesAutoresizingMaskIntoConstraints="NO" id="wci-Fa-1Ia">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wci-Fa-1Ia">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                     </imageView>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRQ-Ws-1TN">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Category" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cjf-zW-vfd">
-                                                <rect key="frame" x="30" y="425" width="325" height="33"/>
+                                                <rect key="frame" x="30" y="423.5" width="325" height="34.5"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="28"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sveip for å velge " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWv-Tf-tZn">
-                                                <rect key="frame" x="30" y="466" width="139" height="21"/>
+                                                <rect key="frame" x="30" y="466" width="151" height="22"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -138,13 +139,13 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="vh5-Mc-raP"/>
                         <constraints>
                             <constraint firstAttribute="top" secondItem="3Ff-yd-VIX" secondAttribute="top" id="J7C-pp-RRe"/>
                             <constraint firstItem="vh5-Mc-raP" firstAttribute="trailing" secondItem="3Ff-yd-VIX" secondAttribute="trailing" id="bDI-7O-2wC"/>
                             <constraint firstAttribute="bottom" secondItem="3Ff-yd-VIX" secondAttribute="bottom" id="gsd-QT-QJg"/>
                             <constraint firstItem="3Ff-yd-VIX" firstAttribute="leading" secondItem="vh5-Mc-raP" secondAttribute="leading" id="kcD-Mw-qGg"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="vh5-Mc-raP"/>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
@@ -155,6 +156,7 @@
                         <outlet property="initialImageView" destination="wci-Fa-1Ia" id="BfR-xF-efF"/>
                         <outlet property="scrollView" destination="3Ff-yd-VIX" id="i4R-UA-3Ph"/>
                         <segue destination="RiG-Sb-BHa" kind="presentation" identifier="showCard" modalTransitionStyle="crossDissolve" id="3kh-k1-OTJ"/>
+                        <segue destination="m67-14-4R3" kind="presentation" identifier="showPoseDetails" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="FS1-Po-sl7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NEp-aj-ANm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -166,9 +168,11 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EnQ-dg-ry5" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" largeTitles="YES" id="BRB-p4-nVQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="BRB-p4-nVQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="36"/>
                         </textAttributes>
@@ -199,7 +203,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ge2-Wa-wW2">
-                                        <rect key="frame" x="41" y="278" width="293" height="91"/>
+                                        <rect key="frame" x="41" y="276" width="293" height="95.5"/>
                                         <string key="text">The best preperation
 for tomorrow is doing 
 your best today.</string>
@@ -208,7 +212,7 @@ your best today.</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- H. Jackson Brown, Jr." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENl-ed-JTh">
-                                        <rect key="frame" x="83" y="388.5" width="209" height="23.5"/>
+                                        <rect key="frame" x="76.5" y="391" width="222.5" height="24.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -218,14 +222,14 @@ your best today.</string>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="CancelButtonDark">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleColor" systemColor="darkTextColor"/>
                                         </state>
                                         <connections>
                                             <action selector="dismissVC:" destination="RiG-Sb-BHa" eventType="touchUpInside" id="StN-xz-lM2"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kg3-BP-US2">
-                                        <rect key="frame" x="103.5" y="200" width="168" height="53"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kg3-BP-US2">
+                                        <rect key="frame" x="103.5" y="198" width="168" height="53"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="168" id="Ij7-51-YO4"/>
@@ -257,6 +261,7 @@ your best today.</string>
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="wa4-ft-nkh"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="wa4-ft-nkh" firstAttribute="trailing" secondItem="7Wr-wb-aMm" secondAttribute="trailing" id="9h6-Sl-9xE"/>
@@ -268,7 +273,6 @@ your best today.</string>
                             <constraint firstAttribute="bottom" secondItem="7Wr-wb-aMm" secondAttribute="bottom" id="kMl-r6-Kxx"/>
                             <constraint firstItem="7Wr-wb-aMm" firstAttribute="leading" secondItem="wa4-ft-nkh" secondAttribute="leading" id="ntu-5j-UGM"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="wa4-ft-nkh"/>
                     </view>
                     <connections>
                         <outlet property="authorLabel" destination="ENl-ed-JTh" id="NES-Qz-S3p"/>
@@ -281,10 +285,91 @@ your best today.</string>
             </objects>
             <point key="canvasLocation" x="2922" y="654"/>
         </scene>
+        <!--Pose Details View Controller-->
+        <scene sceneID="TxY-cV-kJ3">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="38K-vj-huL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="m67-14-4R3" customClass="PoseDetailsViewController" customModule="Varm_Yoga" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gdp-PZ-fya">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6w-ei-sja">
+                                <rect key="frame" x="30" y="8.5" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="CpS-gB-8bQ"/>
+                                    <constraint firstAttribute="width" constant="26" id="xbn-xu-1bZ"/>
+                                </constraints>
+                                <state key="normal" image="CancelButtonLight"/>
+                                <connections>
+                                    <action selector="goBack:" destination="m67-14-4R3" eventType="touchUpInside" id="C4Q-9k-IEC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Category" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VlM-Bk-8dv">
+                                <rect key="frame" x="26" y="102" width="323" height="34.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhJ-VT-9nJ">
+                                <rect key="frame" x="26" y="148.5" width="323" height="423.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQv-kp-4Kl">
+                                <rect key="frame" x="26" y="608" width="323" height="39"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="22"/>
+                                <state key="normal" title="Play Video">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="playVideo:" destination="m67-14-4R3" eventType="touchUpInside" id="m6z-kr-muR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EYo-5G-HH7"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VlM-Bk-8dv" firstAttribute="leading" secondItem="EYo-5G-HH7" secondAttribute="leading" constant="26" id="01A-xk-bPY"/>
+                            <constraint firstItem="a6w-ei-sja" firstAttribute="leading" secondItem="EYo-5G-HH7" secondAttribute="leading" constant="30" id="3sg-tg-1v2"/>
+                            <constraint firstItem="VlM-Bk-8dv" firstAttribute="top" secondItem="EYo-5G-HH7" secondAttribute="top" constant="102" id="Kl0-0H-l7H"/>
+                            <constraint firstItem="EYo-5G-HH7" firstAttribute="trailing" secondItem="SQv-kp-4Kl" secondAttribute="trailing" constant="26" id="O5b-gi-a4n"/>
+                            <constraint firstItem="hhJ-VT-9nJ" firstAttribute="top" secondItem="VlM-Bk-8dv" secondAttribute="bottom" constant="12" id="OTY-Co-0xH"/>
+                            <constraint firstItem="hhJ-VT-9nJ" firstAttribute="centerX" secondItem="Gdp-PZ-fya" secondAttribute="centerX" id="Z3W-jj-jPZ"/>
+                            <constraint firstItem="EYo-5G-HH7" firstAttribute="trailing" secondItem="hhJ-VT-9nJ" secondAttribute="trailing" constant="26" id="dUY-pt-WPG"/>
+                            <constraint firstItem="SQv-kp-4Kl" firstAttribute="top" secondItem="hhJ-VT-9nJ" secondAttribute="bottom" constant="36" id="dvV-ud-Dw2"/>
+                            <constraint firstItem="EYo-5G-HH7" firstAttribute="trailing" secondItem="VlM-Bk-8dv" secondAttribute="trailing" constant="26" id="ecs-dI-IEt"/>
+                            <constraint firstItem="SQv-kp-4Kl" firstAttribute="leading" secondItem="EYo-5G-HH7" secondAttribute="leading" constant="26" id="gqn-q6-Mbi"/>
+                            <constraint firstItem="EYo-5G-HH7" firstAttribute="bottom" secondItem="SQv-kp-4Kl" secondAttribute="bottom" constant="20" id="jdc-zP-96g"/>
+                            <constraint firstItem="hhJ-VT-9nJ" firstAttribute="leading" secondItem="EYo-5G-HH7" secondAttribute="leading" constant="26" id="lvQ-be-0bV"/>
+                            <constraint firstItem="VlM-Bk-8dv" firstAttribute="centerX" secondItem="Gdp-PZ-fya" secondAttribute="centerX" id="uBn-D6-u26"/>
+                            <constraint firstItem="SQv-kp-4Kl" firstAttribute="centerX" secondItem="Gdp-PZ-fya" secondAttribute="centerX" id="xuo-Xz-Pp5"/>
+                            <constraint firstItem="a6w-ei-sja" firstAttribute="top" secondItem="EYo-5G-HH7" secondAttribute="top" constant="9" id="zX4-nj-GSU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vzK-me-dZi"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="lblPoseDetails" destination="hhJ-VT-9nJ" id="bhA-Lx-54U"/>
+                        <outlet property="lblPoseTitle" destination="VlM-Bk-8dv" id="FRh-ep-P8T"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3860" y="1435.2323838080961"/>
+        </scene>
     </scenes>
     <resources>
         <image name="CancelButtonDark" width="26" height="26"/>
         <image name="CancelButtonLight" width="26" height="26"/>
-        <image name="category1" width="959" height="1343"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

@@ -26,8 +26,6 @@ class PoseDetailsViewController: UIViewController {
     }
     
     @IBAction func playVideo(_ sender: Any) {
-        print("selectedPose.videoURL: ", selectedPose.videoURL)
-        
         if let videoURL = selectedPose.videoURL {
             let mediaURL = URL(string: videoURL)!
             let player = AVPlayer(url: mediaURL)
@@ -38,8 +36,6 @@ class PoseDetailsViewController: UIViewController {
                 player.play()
             }
         }
-        
-
     }
     
 }

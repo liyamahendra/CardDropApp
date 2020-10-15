@@ -288,14 +288,13 @@ your best today.</string>
         <!--Pose Details View Controller-->
         <scene sceneID="TxY-cV-kJ3">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="38K-vj-huL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="m67-14-4R3" customClass="PoseDetailsViewController" customModule="Varm_Yoga" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gdp-PZ-fya">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6w-ei-sja">
-                                <rect key="frame" x="30" y="8.5" width="26" height="26"/>
+                                <rect key="frame" x="30" y="9" width="26" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="CpS-gB-8bQ"/>
                                     <constraint firstAttribute="width" constant="26" id="xbn-xu-1bZ"/>
@@ -306,13 +305,13 @@ your best today.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Category" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VlM-Bk-8dv">
-                                <rect key="frame" x="26" y="102" width="323" height="34.5"/>
+                                <rect key="frame" x="26" y="64" width="323" height="34.5"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhJ-VT-9nJ">
-                                <rect key="frame" x="26" y="148.5" width="323" height="423.5"/>
+                                <rect key="frame" x="26" y="110.5" width="323" height="452.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -320,8 +319,11 @@ your best today.</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQv-kp-4Kl">
-                                <rect key="frame" x="26" y="608" width="323" height="39"/>
+                                <rect key="frame" x="26" y="599" width="323" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="4No-kl-7QU"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="22"/>
                                 <state key="normal" title="Play Video">
                                     <color key="titleColor" systemColor="labelColor"/>
@@ -336,7 +338,7 @@ your best today.</string>
                         <constraints>
                             <constraint firstItem="VlM-Bk-8dv" firstAttribute="leading" secondItem="EYo-5G-HH7" secondAttribute="leading" constant="26" id="01A-xk-bPY"/>
                             <constraint firstItem="a6w-ei-sja" firstAttribute="leading" secondItem="EYo-5G-HH7" secondAttribute="leading" constant="30" id="3sg-tg-1v2"/>
-                            <constraint firstItem="VlM-Bk-8dv" firstAttribute="top" secondItem="EYo-5G-HH7" secondAttribute="top" constant="102" id="Kl0-0H-l7H"/>
+                            <constraint firstItem="VlM-Bk-8dv" firstAttribute="top" secondItem="EYo-5G-HH7" secondAttribute="top" constant="64" id="Kl0-0H-l7H"/>
                             <constraint firstItem="EYo-5G-HH7" firstAttribute="trailing" secondItem="SQv-kp-4Kl" secondAttribute="trailing" constant="26" id="O5b-gi-a4n"/>
                             <constraint firstItem="hhJ-VT-9nJ" firstAttribute="top" secondItem="VlM-Bk-8dv" secondAttribute="bottom" constant="12" id="OTY-Co-0xH"/>
                             <constraint firstItem="hhJ-VT-9nJ" firstAttribute="centerX" secondItem="Gdp-PZ-fya" secondAttribute="centerX" id="Z3W-jj-jPZ"/>
@@ -358,6 +360,7 @@ your best today.</string>
                         <outlet property="lblPoseTitle" destination="VlM-Bk-8dv" id="FRh-ep-P8T"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="38K-vj-huL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3860" y="1435.2323838080961"/>
         </scene>

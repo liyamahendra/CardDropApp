@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import AVKit
-import AVFoundation
 
 class ImageSelectionViewController: UIViewController {
     
@@ -62,7 +60,7 @@ class ImageSelectionViewController: UIViewController {
             photoView.frame = frame
             photoView.imageView.imageURL(pose.imageURL ?? "")
             
-            photoView.descriptionLabel.text = pose.description
+            photoView.descriptionLabel.text = pose.name
             photoView.photographerLabel.text = pose.photographer
             
             scrollView.addSubview(photoView)
@@ -121,18 +119,6 @@ class ImageSelectionViewController: UIViewController {
             guard let poseDetailsVC = segue.destination as? PoseDetailsViewController else {return}
             poseDetailsVC.selectedPose = allPoses[currentScrollViewPage - 1]
             poseDetailsVC.modalTransitionStyle = .crossDissolve
-        }
-    }
-    
-    func playVideo() {
-        if allPoses.count > 0, let videoURL = allPoses[currentScrollViewPage - 1].videoURL {
-            let mediaURL = URL(string: videoURL)!
-            let player = AVPlayer(url: mediaURL)
-            let playerController = AVPlayerViewController()
-            playerController.player = player
-            UIApplication.shared.keyWindow?.rootViewController?.present(playerController, animated: true, completion: {
-                player.play()
-            })
         }
     }
     
